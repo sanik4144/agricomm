@@ -54,26 +54,14 @@ header {
     z-index: 10;
     min-height: 5vh;
 }
-
-header .logo p {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-header .logo p img {
-    width: 30px;
-    margin-right: 10px;
+.logo img{
+    margin-left: 20px;
+    width: 150px;
+    border:1px solid #13d152;
+    padding: 2px;
+    border-radius: 7px;
 }
 
-.logo-figure {
-    border: 1px solid #fff;
-}
-.logo {
-    font-size: 2rem;
-
-}
 #menu-icon {
     display: none;
 }
