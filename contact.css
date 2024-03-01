@@ -152,6 +152,12 @@ nav li:last-child {
     text-align: center;
     font-size: 5rem;
     background-color: #13d152;
+    margin: 20px;
+    margin-right: 20%;
+    margin-left: 20%;
+    border-radius: 5rem;
+    font-style: italic;
+    font-stretch:wider;
   }
 
   .owners-card-section {
@@ -208,71 +214,100 @@ nav li:last-child {
   
   
   /* contact section starts here  */
+
   #contact-section {
     background-color:#191F24;
     min-height: 20vh;
+    display: flex;
+    flex-direction: row;
   }
   
-  #contact-section h2{
+  #contact-section div h2{
     color: #1DC93F;
+    text-align: center;
+    font-size: 7rem;
+    font-family: "Poppins", sans-serif;
   }
-  
-  #contact-section h2 span{
-    color: #fff;
+
+  .details{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+  .contact-icon{
+    display: flex;
+    margin: 2rem;
+    text-align: center;
+    width: 40rem;
+    border-radius: 1rem;
+    background-color:#b8e29fd8;
+  }
+  .contact-icon i{
+    font-size: 1.8rem;
+    margin: 1rem;
+    width: 1rem;
+    height: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+  .contact-icon h1{
+    align-items: center;
+    text-align: center;
+    /* margin: auto; */
+    /* margin-right: .5rem; */
+    padding: 5px;
+  }
+
   #contact-form {
     padding: 1rem;
     border: #1f9136 solid 0.2px;
-    border-radius:0 30px  ;
+    border-radius: 1rem;
     box-shadow:black 20px 20px  15px 4px;
     min-height: 30vh;
     margin: 1rem;
     margin-top: 10px;
-    color:#1DC93F;
+    color:black;
+    font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
     transition: transform 0.3s;
+    background-color: #b8e29fd8;
   }
   #contact-form:hover{
     transform: scale(1.1);
   }
-  .form-control {
+  .form-field {
     margin-bottom: 1.5rem;
-    
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .form-control label {
-    font-size: 2rem;
-    flex: 0.3;
-    font-family: "Poppins", sans-serif;
-    
-  }
   input,
   textarea {
-    flex: 0.7;
+    flex: .9;
     width: 40rem;
     margin-top:5px;
     font-size: 1.6rem;
     height: 2px;
     padding: 2rem 1rem;
     border: none;
-    border-radius: 0 20px;
+    border-radius: 20px;
   }
   textarea {
     resize: none;
     height: 12vh;
   }
-  .form-btn-field {
+  .form-btn{
     display: flex;
-    justify-content: flex-end;
   }
   .contact-btn {
-    background-color:#161D22;
-    color:#1f9136;
+    color:black;
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    align-items: center;
     box-shadow: black 5px 5px 5px;
-    border-radius: 0 20px;
+    border-radius: 20px;
     border: #1f9136 solid 0.1px;
     margin-top: 5px;
     height: 40px;
@@ -280,6 +315,8 @@ nav li:last-child {
   }
   
   .contact-btn:hover{
-    background-color: #13151D;
+    background-color: rgb(52, 189, 132);
+    transition: all 0.3s;
+    cursor: pointer;
   }
   /* contact section ends here  */
