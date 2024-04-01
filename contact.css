@@ -282,4 +282,11 @@ nav li:last-child {
     font-size: 2rem;
     padding: .7rem;
   }
+  .contact-handle a:hover{
+    transform: scale(1.2);
+    transition: all .3s;
+  }
+  .contact-handle a:not(:hover){
+    transition: all .3s;
+  }
   /* contact section ends here  */
