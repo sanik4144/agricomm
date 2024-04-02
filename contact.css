@@ -47,6 +47,8 @@ nav li {
   display: inline-block;
   margin-right: 2rem;
   padding: 1rem;
+  padding-top: 0%;
+  padding-bottom: 0%;
   transition: all 0.4s;
 }
 nav li:last-child {
@@ -70,7 +72,7 @@ nav li:last-child {
 .nohover{
   background-color: #f18035;
   color: white !important;
-  padding: 30px;
+  padding: 20px;
   transition: all 0.3s;
 }
 .nohover:hover{
@@ -81,12 +83,12 @@ nav li:last-child {
 
 
 /* Dropdown button handling start*/
-.dropdown { 
+.dropdown-list { 
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
-  /* background-color: inherit; */
+  /* padding: 14px 16px; */
+  font-size: 1.8rem;
   font-family: sans-serif;
   margin: 0;
 }
@@ -101,14 +103,14 @@ nav li:last-child {
   font-family: sans-serif;
   margin: 0;
 }
-.dropdown:hover .dropbtn {
+.dropdown-list:hover .dropbtn {
   background-color: #f18035;
   color: white !important;
   border-radius: 0.6rem;
   margin-right: 10px;
   transition: all 0.3s;
 }
-.dropdown:not(:hover) .dropbtn {
+.dropdown-list:not(:hover) .dropbtn {
   transition: all 0.3s;
 }
 .dropdown-content {
@@ -119,7 +121,8 @@ nav li:last-child {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-.dropdown-content a {
+.dropitem {
+  font-size: 1.8rem;
   float: none;
   color: white;
   padding: 12px 16px;
